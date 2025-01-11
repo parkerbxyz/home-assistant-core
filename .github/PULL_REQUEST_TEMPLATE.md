@@ -56,7 +56,7 @@
 -->
 
 - [ ] The code change is tested and works locally.
-- [ ] Local tests pass. **Your PR cannot be merged unless tests pass**
+- [ ] [Local tests](https://developers.home-assistant.io/docs/development_testing) pass. **Your PR cannot be merged unless tests pass.**
 - [ ] There is no commented out code in this PR.
 - [ ] I have followed the [development checklist][dev-checklist]
 - [ ] I have followed the [perfect PR recommendations][perfect-pr]
