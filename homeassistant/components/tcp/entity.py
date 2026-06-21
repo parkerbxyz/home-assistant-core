@@ -52,6 +52,7 @@ class TcpEntity(Entity):
         self._ssl_context: ssl.SSLContext | None = None
         if self._config[CONF_SSL]:
             self._ssl_context = ssl.create_default_context()
+            self._ssl_context.minimum_version = ssl.TLSVersion.TLSv1_2
             if not self._config[CONF_VERIFY_SSL]:
                 self._ssl_context.check_hostname = False
                 self._ssl_context.verify_mode = ssl.CERT_NONE
